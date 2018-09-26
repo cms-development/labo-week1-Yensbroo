@@ -10,17 +10,22 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="<?php bloginfo('url') ?>">
-      <?php bloginfo('name'); ?>
-    </a>
-    <?php 
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="<?php bloginfo('url') ?>">
+        <?php bloginfo('name'); ?>
+      </a>
+      <div id="navbar" class="collapse navbar-collapse justify-content-end">
+        <?php 
       wp_nav_menu(array(
+        'theme_location' => 'primary',
         'menu' => 'top_menu',
         'depth' => 2,
         'container' => false,
-        'menu_class' => 'nav',
+        'menu_class' => 'nav navbar-nav',
         'walker' => new WP_Bootstrap_Navwalker()
       ))
     ?>
+      </div>
+    </div>
   </nav>

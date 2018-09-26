@@ -17,8 +17,6 @@
       <!-- sluit de if-conditional -->
       <?php endif; ?>
 
-          <?php get_sidebar(); ?>
-
       <?php wp_reset_postdata(); ?>
     </div>
   </div>

@@ -8,7 +8,7 @@ if ( is_active_sidebar( 'sidebar_primary' ) ) : ?>
 
 <div class="col-md-4 col-sm-5 col-xs-12">
 
-	<div class="sidebar">
+	<div class="card mb-4">
 	
 		<?php dynamic_sidebar( 'sidebar_primary' ); ?>	
 		

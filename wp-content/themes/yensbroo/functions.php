@@ -46,7 +46,7 @@ add_action( 'widgets_init', 'yensbroo_widgets_init');
 add_action('after_setup_theme', 'yensbroo_setup');
   if(! function_exists('yensbroo_setup') ):
     function yensbroo_setup() {
-      register_nav_menu('primary', __( 'Primary navigation', 'yensbroo'));
+      register_nav_menu('Primary', __( 'Primary navigation', 'yensbroo'));
     } endif;
 
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
